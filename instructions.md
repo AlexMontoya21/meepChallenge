@@ -6,7 +6,7 @@
 2. Escribe cd + ruta donde esta el proyecti. Example: cd C:/Users/Alex/git/meep
 3. Clean y build del proyecto: gradlew clean build. 
 4. Levanta el servidor: gradlew bootRun 
-5. Abre tu navegador favorito y escribe http://localhost:8080/vehicles
+5. Abre tu navegador favorito y escribe http://localhost:8080/api/vehicles
 
 Se puede ver como se va escribiendo la informacion de los vehiculos disponibles y no disponibles (disponibles con available = true y no disponibles con available = false)
 
