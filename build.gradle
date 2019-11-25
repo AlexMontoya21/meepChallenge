@@ -14,6 +14,16 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.1.RELEASE")
     }
 }
+plugins {
+	id "java"
+	id "maven"
+	id "eclipse"
+	id "idea"
+	id "io.spring.dependency-management" version "1.0.2.RELEASE"
+	id "org.springframework.boot" version "1.5.2.RELEASE"
+	id "maven-publish"
+	id "com.jfrog.artifactory" version "4.7.5"
+}
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -36,9 +46,12 @@ targetCompatibility = 1.8
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly "org.projectlombok:lombok:1.16.16"
+	annotationProcessor("org.projectlombok:lombok:1.16.16")
     compile("org.springframework.boot:spring-boot-starter")
 	compile "io.springfox:springfox-swagger2:2.7.0"
 	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.0.2'
     testCompile("junit:junit")
 }
+
+
