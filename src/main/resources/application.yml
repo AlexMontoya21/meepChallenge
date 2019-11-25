@@ -1,0 +1,8 @@
+server:
+  port: 8080
+swagger:
+  externalHostName: localhost:8080
+
+spring.mvc.async.request-timeout: -1 #-1 means infinity
+
+meep.url: "https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources"
